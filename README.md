@@ -9,8 +9,11 @@ This Repo deals with Function trace code with Intel PIN TOOL, use for [text_atte
 
         $PIN_ROOT = 'Extract PIN Dir.'
         $TOOL_ROOTS := 'Change File Name'
+2) modify run.sh
+        
+        time -p $PIN_ROOT/pin -t $DIR/obj-*/'Change File Name'.so ${@}
 
-2) use run.sh for execute pin code with 
+3) use run.sh for execute pin code with 
 
         $ ./run.sh -- ${prog_name}
 
