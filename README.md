@@ -1,15 +1,17 @@
 # function_trace_pin
-This Repo deals with Function trace code with Intel PIN TOOL
+This Repo deals with Function trace code with Intel PIN TOOL, use for [text_attention](https://github.com/laoeve/text_attention)
 
-0) Makefile finds Intel PIN Tool Setup Dir. D/L from this [Link](https://software.intel.com/sites/landingpage/pintool/downloads/pin-3.20-98437-gf02b61307-gcc-linux.tar.gz)
+0) Makefile finds Intel PIN Tool Setup Dir. D/L from this link
 
+        $wget http://software.intel.com/sites/landingpage/pintool/downloads/pin-3.2-81205-gcc-linux.tar.gz
+        $tar -cvf pin-3.2-81205-gcc-linux.tar.gz ${PIN_ROOT}
 1) configure from Makefile
-  $TOOL_ROOTS:= 'Change File Name'
 
-2) make PIN_ROOT=${YOUR_PIN_PATH}
+        $PIN_ROOT = 'Extract PIN Dir.'
+        $TOOL_ROOTS := 'Change File Name'
 
-3) run with pin execution file
-    \${PIN_SETUP_DIR}/pin -t yourfile.so -- \${yourprog} {progargs}
+2) use run.sh for execute pin code with 
 
-run.sh under developed
+        $ ./run.sh -- ${prog_name}
+
    
