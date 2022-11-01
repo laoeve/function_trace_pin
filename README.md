@@ -9,7 +9,7 @@ This Repo deals with Function trace code with Intel PIN TOOL
 2) make PIN_ROOT=${YOUR_PIN_PATH}
 
 3) run with pin execution file
-    \\${PIN_SETUP_DIR}/pin -t yourfile.so -- \\${yourprog} {progargs}
+    \${PIN_SETUP_DIR}/pin -t yourfile.so -- \${yourprog} {progargs}
 
 run.sh under developed
    
