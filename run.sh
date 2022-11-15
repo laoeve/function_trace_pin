@@ -19,7 +19,7 @@ PROG=$(echo $PROGARGS | { read first rest; echo $(basename $first) | sed s,\\s.*
 echo "### running pin: $PROGARGS $DIR"
 
 set +o errexit
-time -p $PIN_ROOT/pin -t $DIR/obj-*/malloctrace.so ${@}
+time -p $PIN_ROOT/pin -t $DIR/obj-*/memory_access_rtn_csv.so ${@}
 retcode=$?
 set -o errexit
 
