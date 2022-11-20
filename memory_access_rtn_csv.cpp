@@ -8,7 +8,10 @@ ofstream outFile;
  
 // target probe point with procedure name mangled
 // if running without probe, modify flag to TRUE
-const string rtn_probe = "_ZTv0_n24_N14text_attention20AttentionTransformerIfE7forwardERNS_6TensorIfEERKS3_";
+const string rtn_probe = "_ZTv0_n24_N14text_attention20AttentionTransformerIfE7forwardERNS_6TensorIfEERKS3_"; // Transformer->forward
+//const string rtn_probe = "_ZTv0_n24_N14text_attention2T5IfE7forwardERNS_6TensorIfEERKS3_";  //  T5->forward
+//const string rtn_probe = "_ZTv0_n24_N14text_attention4GPT2IfE7forwardERNS_6TensorIfEERKS3_"; // GPT2->forward
+//const string rtn_probe = "_ZTv0_n24_N14text_attention4BERTIfE7forwardERNS_6TensorIfEERKS3_";  //  BERT->forward
 bool rtnstart_flag = FALSE;
 
 // Holds instruction count for a single procedure
